@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'assets/slider-images/image01.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'assets/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'assets/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'assets/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}
+											{image : 'images/slider-images/image01.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
+											{image : 'images/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
+											{image : 'images/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
+											{image : 'images/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
@@ -222,7 +222,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: 'assets/twitter/',
+          modpath: 'javascripts/twitter.js/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -405,7 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'assets/placeholder.js',
+		nope: 'javascripts/placeholder.js',
 		complete : function() {
 				if (!Modernizr.input.placeholder) {
 						Placeholders.init({
@@ -438,7 +438,7 @@ $(document).ready(function(){
 	BRUSHED.goUp();
 	BRUSHED.filter();
 	BRUSHED.fancyBox();
-	BRUSHED.contactForm();
+	//BRUSHED.contactForm();
 	//BRUSHED.tweetFeed();
 	BRUSHED.scrollToTop();
 	BRUSHED.utils();
